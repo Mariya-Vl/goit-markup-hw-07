@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile-styles.css">
+    <link rel="stylesheet" href="./css/tablet-styles.css">
+    <link rel="stylesheet" href="./css/desktop-styles.css">
+    
   </head>
   <body>
     <!-- HEADER -->
@@ -52,6 +56,86 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open-btn" type="button" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm-menu-hamburger">
+            </use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- DROPDOWN MENU -->
+      <div class="dropdown-menu is-hidden" data-menu>
+        <div class="dropdown-menu-wrapper">
+          <div>
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="close-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#modal-Close-Btn"></use>
+              </svg>
+            </button>
+            <ul class="menu-nav-list">
+              <li class="list menu-item">
+                <a href="./index.html" class="link menu-link current">Studio</a>
+              </li>
+              <li class="list menu-item">
+                <a href="./portfolio.html" class="link menu-link">Portfolio</a>
+              </li>
+              <li class="list menu-item">
+                <a href="" class="link menu-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <address>
+              <ul class="menu-address-list">
+                <li class="list menu-tel">
+                  <a href="tel:+110001111111" class="link menu-tel-link">
+                    +11 (000) 111-11-11
+                  </a>
+                </li>
+                <li class="list menu-e-address">
+                  <a href="mailto:info@devstudio.com" class="link menu-e-address-link">
+                    info@devstudio.com
+                  </a>
+                </li>
+                
+              </ul>
+            </address>
+    
+            <ul class="menu-soc-list list">
+              <li class="menu-soc-item">
+                <a href="" class="menu-soc-link link">
+                  <svg class="menu-soc-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a href="" class="menu-soc-link link">
+                  <svg class="menu-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a href="" class="menu-soc-link link">
+                  <svg class="menu-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a href="" class="menu-soc-link link">
+                  <svg class="menu-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
       </div>
     </header>
 
@@ -113,18 +197,21 @@
           <ul class="product-section-list">
             <li class="list">
               <img
+              srcset="./images/item-one.jpg 1x, ./images/item-one-x2.jpg 2x"
                 src="./images/item-one.jpg"
                 alt="Monitor with the opend page of the blog"
                 width="360" />
             </li>
             <li class="list">
               <img
+              srcset="./images/item-two.jpg 1x, ./images/item-two-x2.jpg 2x"
                 src="./images/item-two.jpg"
                 alt="Several screens of the chats of the phone"
                 width="360" />
             </li>
             <li class="list">
               <img
+              srcset="./images/item-three.jpg 1x, ./images/item-three-x2.jpg 2x"
                 src="./images/item-three.jpg"
                 alt="Computer on the background of the phone"
                 width="360" />
@@ -140,6 +227,7 @@
           <ul class="team-list">
             <li class="list team-item">
               <img
+              srcset="./images/mark-guerrero.jpg 1x, ./images/mark-guerrero-x2.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="Smiling man with short hair, beard and blue shirt"
                 width="264" />
@@ -180,6 +268,7 @@
             </li>
             <li class="list team-item">
               <img
+              srcset="./images/tom-ford.jpg 1x, ./images/tom-ford-x2.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="Wide smiling man with middle brown hair, beard and blue shirt"
                 width="264" />
@@ -220,6 +309,7 @@
             </li>
             <li class="list team-item">
               <img
+              srcset="./images/camila-garcia.jpg 1x, ./images/camila-garcia-x2.jpg 2x"
                 src="./images/camila-garcia.jpg"
                 alt="Young pretty woman with long dark hair and in a pink sweater"
                 width="264" />
@@ -260,6 +350,7 @@
             </li>
             <li class="list team-item">
               <img
+              srcset="./images/daniel-wilson.jpg 1x, ./images/daniel-wilson-x2.jpg 2x"
                 src="./images/daniel-wilson.jpg"
                 alt="Smiling young man with thick short hair, beard and grey T-shirt"
                 width="264" />
@@ -404,8 +495,7 @@
         <div class="footer-wrap">
           <p class="footer-subtitle">Subscribe</p>
           <form class="subscribe-wrap">
-            <input
-              class="subscribe-input"
+            <input class="subscribe-input"
               type="email"
               name="sub-mail"
               id="sub-mail"
@@ -419,7 +509,8 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
     <!----------------------- MODAL ----------------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -479,8 +570,10 @@
               class="checkbox-policy hidden"
               required />
             <label class="checkbox-lable" for="policy">
-              I accept the terms and conditions of the&nbsp;
-              <a class="checkbox-link" href="">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the&nbsp;
+                <a class="checkbox-link" href="">Privacy Policy</a>
+              </spa>
             </label>
           </div>
           <button class="submit-btn" type="submit">Send</button>
@@ -489,5 +582,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

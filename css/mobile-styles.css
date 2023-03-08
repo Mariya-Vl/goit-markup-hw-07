@@ -1,0 +1,53 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+  }
+  .menu-soc-item {
+    width: 40px;
+    height: 40px;
+  }
+  .menu-soc-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .menu-tel-link {
+    font-size: 36px;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .modal {
+    width: 392px;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+  .modal-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list,
+  .address-list {
+    display: none;
+  }
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 72px;
+  }
+  .feature-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .customer-item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+  .team-section > .container {
+    max-width: 294px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    line-height: 1.17;
+  }
+}
