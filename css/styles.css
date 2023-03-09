@@ -153,9 +153,6 @@ img {
   display: flex;
   gap: 40px;
 }
-.address-list-item {
-  min-width: 151px;
-}
 .address-link {
   font-style: normal;
   color: var(--main-text-color);
@@ -495,9 +492,6 @@ img {
 }
 .footer-wrap {
   text-align: center;
-}
-.footer-wrap:not(:last-child) {
-  margin-bottom: 72px;
 }
 .footer-logo {
   display: inline-block;
