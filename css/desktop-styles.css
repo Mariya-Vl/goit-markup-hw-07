@@ -13,6 +13,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+    padding: 187px 0px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -32,7 +33,7 @@
   }
   .feature-section {
     padding-top: 120px;
-    padding-bottom: 180px;
+    padding-bottom: 60px;
   }
   .feature-list > .list {
     width: calc((100% - 3 * 24px) / 4);
@@ -50,9 +51,9 @@
   }
   .feature-item::before {
     content: "";
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: 100%;
+    height: 112px;
     background-color: var(--light-color);
     border-radius: 4px;
     margin-bottom: 8px;
